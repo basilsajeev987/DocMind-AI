@@ -1,0 +1,42 @@
+{
+  "name": "basil-local-assistant",
+  "version": "1.0.0",
+  "description": "Local LLM desktop assistant for personal use (Qwen + RAG + voice).",
+  "author": "Basil Sajeev",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "dev": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^26.4.0"
+  },
+ "build": {
+  "appId": "com.basil.localassistant",
+  "productName": "Basil Local Assistant",
+  "directories": { "output": "release" },
+
+  "asar": true,
+
+  "files": [
+    "main.js",
+    "preload.js",
+    "package.json"
+  ],
+
+  "extraResources": [
+    { "from": "../ui/dist", "to": "ui/dist" },
+    { "from": "../../dist/app_server.exe", "to": "app_server.exe" }
+  ],
+
+  "win": { "target": "dir" },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true
+  }
+}
+
+}

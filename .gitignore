@@ -1,0 +1,155 @@
+# ==========================================
+# DocMind AI - Windows Desktop Application
+# ==========================================
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Python Virtual Environments
+venv/
+env/
+ENV/
+.venv/
+
+# Distribution / Packaging
+build/
+dist/
+release/
+out/
+*.spec
+
+# Electron Builder
+electron-builder.yml
+*.blockmap
+
+# Logs
+logs/
+*.log
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDEs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary Files
+temp/
+tmp/
+*.tmp
+
+# Cache
+.cache/
+.pytest_cache/
+.mypy_cache/
+coverage/
+.nyc_output/
+
+# Testing
+coverage/
+*.lcov
+
+# Model Files (Large AI Models)
+models/
+*.gguf
+*.bin
+*.safetensors
+*.onnx
+*.pt
+*.pth
+
+# User Documents / Knowledge Base
+documents/
+knowledge_base/
+user_data/
+
+# OCR Generated Files
+ocr_output/
+ocr_cache/
+
+# Whisper / Speech Models
+whisper_models/
+faster_whisper_models/
+
+# Runtime Data
+sessions/
+chat_history/
+conversations/
+exports/
+
+# Database Files
+*.db
+*.sqlite
+*.sqlite3
+
+# Build Artifacts
+*.exe
+*.msi
+*.dll
+
+# Electron Cache
+electron-cache/
+electron-builder-cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python Packaging
+*.egg-info/
+.eggs/
+
+# Local Configuration
+config.local.json
+settings.local.json
+
+# Generated Reports
+reports/
+exports/
+
+# Uploaded Files
+uploads/
+
+# TensorFlow / PyTorch Cache
+.torch/
+.huggingface/
+transformers_cache/
+
+# Windows Specific
+*.stackdump
+
+# Tesseract OCR
+tessdata/
+
+# Large Document Files
+*.pdf
+*.docx
+*.xlsx
+
+# Keep sample documents if needed
+!sample_documents/
+!sample_documents/**
